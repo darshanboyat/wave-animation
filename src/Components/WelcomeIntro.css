@@ -1,0 +1,34 @@
+ul li span{
+    position: relative;
+}
+ul{
+    height: 50px;
+    overflow: hidden;
+}
+ul li span::after{
+    content: "";
+    border-left: 2px solid #FC6D6D;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 35px;
+    background-color: blue;
+    animation: typing 3s steps(10) infinite;
+    
+}
+li{
+    position: relative;
+    top: 0;
+    animation: slider 12s steps(4) infinite;
+}
+@keyframes slider {
+    100%{
+        top: -140px;
+    }
+}
+@keyframes typing {
+    100%{
+        left: 110%;
+    }   
+}
